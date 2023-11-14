@@ -47,10 +47,34 @@ nav{
     align-items: center;
     justify-content: space-between;
     width: 15%;
-    position: relative;
     right: 5%;
+    position: absolute;
 }
 
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    transition: 0.4s;
+}
+
+
+.menu a:hover::after{
+    content: ""; 
+    display: block;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 2px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #3387A9;
+    position: relative;
+    transform: scaleX(0.5);    
+}
 
 
 #logo-nome{
