@@ -7,7 +7,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', 'Roboto';
     color: #ffff;
+    text-decoration: none;
 }
+
+body{
+    background-color: #23253A;
+}
+
 
 main{
     width: 100vw;
@@ -35,6 +41,18 @@ nav{
     align-items: center;
 } 
 
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    position: relative;
+    right: 5%;
+}
+
+
+
 #logo-nome{
    width: 55px;
    height: 55px;
@@ -45,7 +63,6 @@ nav{
 .secao-inicial{
     width: 100vw;
     height: 80vh;
-    background-color: #23253A;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -70,37 +87,64 @@ nav{
 }
 
 #nome{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
 }
 
-.botao-inicial > button{
+#botao-inicial{
+    width: 15%;
+    text-align: center;
     cursor: pointer;
-    display: flex;
     background-color: #3387A9;
     position: relative;
-    top: 40%;
-    border: none;
+    top: 10%;
+    border: 2px solid #3387A9;
     border-radius: 10px;
-    
-    padding: 5px;
+    padding: 8px;
+    transition: 1s;
+
+}
+
+#botao-inicial:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+    animation: 0.5s;
 }
 
 .foto-perfil{
-    width: 50%;
-    height: 80%;
+    width: 55%;
+    height: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     top: 0;
+    
 }
 
 .foto-perfil > img{
-    width: 75%;
-    height: 98%;
+    width: 60%;
+    height: 80%;
     border-radius: 50%;
     position: relative;
     top: 0;
     margin-bottom: 10%;
+ 
 }
+
+@media(max-width: 1366px){
+    #nome{
+        font-size: 2.75rem;
+    }
+
+    .foto-perfil > img{
+        width: 65%;
+        
+    }
+
+    #botao-inicial{
+        width: 20%;
+    }
+}
+
+
