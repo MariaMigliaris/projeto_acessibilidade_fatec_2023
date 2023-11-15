@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Eduarda Migliaris</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <main>
@@ -26,16 +28,16 @@
 
         </section>
 
-        <section class="secao-inicial">
+        <section class="secao-inicial" data-aos="fade-up" data-aos-duration="2500" >
 
             <div class="descricao">
                 <h1 id="nome">Olá! Eu sou a <br> Maria Eduarda Migliaris</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, maiores. Voluptatum adipisci nisi, quidem vero, ea excepturi placeat repellendus autem voluptatibus, amet quasi. Fugiat obcaecati corrupti cupiditate ea, recusandae reprehenderit?</p>
+                <p>Desenvolvendo minha paleta de habilidades: programação e ilustração.</p>
 
             
-                    <button id="botao-inicial"> Sobre mim</button>
+                    <button id="botao-inicial" onclick="rolarAte()"> Sobre mim</button>
                 
-                
+
             </div>
             
             <div class="foto-perfil">
@@ -44,20 +46,21 @@
         </section>
 
 
-        <section class="secao-sobre">
+        <section class="secao-sobre" data-aos="fade-up" data-aos-duration="2500">
             
             <div class="descricao-sobre">
-                <h2>Sobre Mim</h2>
-                
+                <h2 id="titulo-sobre">Sobre Mim</h2>
+                <p id="p-sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem veritatis qui eaque. Itaque voluptatum nostrum accusantium reiciendis accusamus at blanditiis, magni quia, ab totam quod laudantium dolorum, perspiciatis cum officiis.</p>
+
                 <div class="card-container">
                     <div class="card">
-                        <h3>titulo</h3>
-                        <p>conteudo do card</p>
+                        <h3>Educação</h3>
+                        <p>Estudante do curso de Sistemas para Internet na Fatec de Taquaritinga no turno matutino, estou no 2º semestre, com previsão de conclusão em 2025. </p>
                     </div>
     
                     <div class="card">
-                        <h3>titulo</h3>
-                        <p>conteudo do card</p>
+                        <h3>Experiência</h3>
+                        <p>Atualmente, trilho meu caminho profissional como Analista de Marketing na loja Personal Modas em Monte Alto, marcando meu início no mundo corporativo.</p>
                     </div>
     
                     <div class="card">
@@ -78,13 +81,13 @@
 <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
+    <div class="vw-plugin-top-wrapper"></div>
+</div>
+</div>
+
+
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-        new window.VLibras.Widget();
-</script>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
 </html>
