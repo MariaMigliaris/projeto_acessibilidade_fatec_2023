@@ -158,15 +158,14 @@ ul a:hover::before{
 }
 
 .foto-perfil > img{
-    width: 65%;
-    height: 80%;
+    width: 55%;
+    height: 70%;
     border-radius: 50%;
     position: relative;
     top: 0;
     margin-bottom: 10%;
  
 }
-
 
 
 .secao-sobre{
@@ -205,7 +204,14 @@ ul a:hover::before{
    
 }
 
-.card-localizacao{
+#h2-linguagem{
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 4%;
+}
+
+.card-linguagem{
     background-color: #1d2031;
     aspect-ratio: 6/4;
     padding: 30px;
