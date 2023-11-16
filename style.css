@@ -12,6 +12,10 @@
 
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #23253A;
     
@@ -108,7 +112,6 @@ ul a:hover::before{
     width: 80%;
     height: 50%;
     display: flex;
-    align-items: left;
     flex-direction: column;
     justify-content: center;
     padding: 0 10%;
@@ -266,17 +269,6 @@ ul a:hover::before{
     margin-bottom: 20px;
 } 
 
-/* .secao-sobre h2::before{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color:  #3ba3cc;
-    
-} */
 
 
 .card-container{
@@ -400,8 +392,91 @@ ul a:hover::before{
 }
 
 
+footer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40%;
+}
+
+footer h2{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #ffffff;
+    display: block;
+    
+}
+
+.logo-redes-sociais{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.logo-social{
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adicione a margem superior desejada */
+}
+
+.logo-informacao {
+    margin-right: 5px; /* Adicione a margem direita desejada entre a imagem e o texto */
+    width: 20px;
+    height: 20px;
+    vertical-align: middle; /* Ajuste o alinhamento vertical das imagens */
+}
 
 
+.facebook{
+    background-image: url(imagens/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.instagram{
+    background-image: url(imagens/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.github{
+    background-image: url(imagens/github.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.informacoes{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+}
 
 
 
@@ -488,6 +563,11 @@ ul a:hover::before{
     
     .direita{
         margin-top: 10%;
+    }
+
+    footer{
+        top: 20%;
+        height: 60%;
     }
 
 }
