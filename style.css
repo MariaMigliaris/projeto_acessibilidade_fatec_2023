@@ -162,17 +162,55 @@ ul a:hover::before{
  
 }
 
+
+#img-sobre {
+    width: 14rem;
+    height: 14rem;
+   
+    
+}
+
+
 .secao-sobre{
     width: 100%;
-    height: 20%;
+    height: 80%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     padding: 0 10%;
+    gap: 5%;
+    /* justify-content: center;
     position: relative;
     margin-top: 12%;
     align-items: center;
-    text-align: center;
+    text-align: center; 
+    flex-direction: column;
+    */ 
+
+}
+
+
+.conjunto-texto{
+    width: 100%;
+    height: 10%;
+    
+}
+
+.direita{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+
+.esquerda{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 3%;
 }
 
 
@@ -187,7 +225,7 @@ ul a:hover::before{
 
 .secao-sobre h3{
     margin-bottom: 20px;
-}
+} 
 
 /* .secao-sobre h2::before{
     content: "";
@@ -201,21 +239,20 @@ ul a:hover::before{
     
 } */
 
-#texto-sobre{
+ #texto-sobre{
     font-size: 1.2rem;
-    margin: 15px 150px;
     
-}
+} 
 
 .card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 25% );
+    display: flex;
     justify-content: space-evenly;
-    gap: 12%;
-    position: relative;
-    top: 15%;
     font-size: 1.1rem;
-}
+    flex-direction: column;
+    width: 70%;
+    height: 40%;
+    gap: 20%;
+} 
 
 .card{
     background-color: #23253A;
@@ -246,12 +283,12 @@ ul a:hover::before{
     color: #ffffff;
     display: block;
     position: relative;
-}
+} 
 
 #texto-projetos{
     font-size: 1.2rem;
     margin: 15px 150px;
-}
+} *
 
 
 
@@ -357,6 +394,7 @@ ul a:hover::before{
     .descricao-sobre h2{
         font-size: 2rem;
     }
+
     .descricao > p{
         font-size: 0.75rem;
        
@@ -367,7 +405,7 @@ ul a:hover::before{
         right: 5%;
     }
 
-    .secao-sobre{
+    /* .secao-sobre{
         height: 65%;
     }
 
@@ -376,10 +414,13 @@ ul a:hover::before{
         
     }
 
+    .secao-projetos h2{
+        font-size: 2rem;
+    }
         
     #texto-sobre{
-        margin: 15px 50px;
-    }
+        margin: 15px 90px;
+    } */
     
     ul a{
         font-size: 1rem;
