@@ -436,14 +436,14 @@ footer h2{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 10px; /* Adicione a margem superior desejada */
+    margin-top: 10px; 
 }
 
 .logo-informacao {
-    margin-right: 5px; /* Adicione a margem direita desejada entre a imagem e o texto */
+    margin-right: 5px; 
     width: 20px;
     height: 20px;
-    vertical-align: middle; /* Ajuste o alinhamento vertical das imagens */
+    vertical-align: middle; 
 }
 
 
