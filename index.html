@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desenvolvendo minha paleta de habilidades: programação e ilustração.">
     <title>Maria Eduarda Migliaris</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
             <header>
-                <nav><a href="#inicio"><img  id="logo-nome" src="imagens/logo-m.svg" alt=""></a>
+                <nav><img  id="logo-nome" src="imagens/logo-m.svg" alt="foto perfil Maria Eduarda">
                 
                     <div class="menu">
                         <ul>
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#contato">Contato</a></li>
+                            <li><a href="#inicio" aria-label="navega para a seção inicio">Inicio</a></li>
+                            <li><a href="#sobre" aria-label="navega para a seção sobre">Sobre</a></li>
+                            <li><a href="#projetos" aria-label="navega para a seção projetos">Projetos</a></li>
+                            <li><a href="#contato" aria-label="navega para a seção contato">Contato</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -32,11 +33,11 @@
                 <p>Desenvolvendo minha paleta de habilidades: programação e ilustração.</p>
 
             
-                    <button id="botao-inicial"> Sobre mim</button>
+                    <button id="botao-inicial" onclick="scrollToTitulo(event)"> Sobre mim</button>
             </div>
             
             <div class="foto-perfil">
-                <img src="imagens/foto-perfil-duda.jpg" alt="">
+                <img src="imagens/foto-perfil-duda.jpg" alt="foto de perfil">
             </div>
         </section>
 
@@ -44,9 +45,10 @@
         <section id="sobre" class="secao-sobre">
         
                 <div class="esquerda">
-                    <img id="img-sobre" src="imagens/image-sobre.svg" alt="">
+                    <img id="img-sobre" src="imagens/image-sobre.svg" alt="um logotipo de um icon de user">
                     <h2 id="h2-linguagem">Linguagens</h2>
-                    <div class="card-linguagem"></div>
+                        <img class="card-linguagem" src="imagens/linguagens.svg" alt="linguagens html, css e js">
+                    
                 </div>
 
                     <div class="direita">
@@ -72,22 +74,23 @@
 
         </section>
 
+       
 
-         <section id="projetos" class="secao-projetos">
+         <section id="projetos"  class="secao-projetos">
             <h2>Projetos</h2>
             <p id="texto-projetos">alguns dos meus projetos e ilustrações.</p>
             <div class="projects-container">
                 <div class="project-card projeto-lifeforlive tooltip" data-tooltip="Life For Live - Um site sobre doações e caridade">
-                    
+                    <img src="imagens/L4L.svg" alt="logo roxa do letreiro do projeto Life for Live">
                 </div>
                 <div class="project-card projeto-ecomatch tooltip" data-tooltip="um jogo de memória infantil sobre a preservação do meio ambiente" >
-                    
+                    <img src="imagens/Ecomatch.svg" alt="logo de uma cidade com letreiro verde do projeto Ecomatch">
                 </div>
                 <div class="project-card projeto-personagem tooltip" data-tooltip="ilustração estilo cartoon de uma personagem para o jogo ecomatch">
-                    
+                    <img src="imagens/ecoguardia.svg" alt="Ilustração de uma personagem com roupa de escoteira marrom do jogo Ecomatch">
                 </div>
                 <div class="project-card projeto-ilustracao tooltip" data-tooltip="ilustração feita em passatempo de uma menina 2d  ">
-                    
+                    <img src="imagens/pintura-girl.svg" alt="Ilustração de uma peronagem sentada em um banco de com flores com uma saia e parte de cima vermelho">
                 </div>
 
             </div>
@@ -99,36 +102,29 @@
             <h2>Contato</h2>
 
             <div class="logo-redes-sociais">
-                <a href="https://www.facebook.com/mariaeduarda.migliaris/" target="_blank">
-                    <div class="logo-social facebook"></div>
+                <a href="https://www.facebook.com/mariaeduarda.migliaris/" target="_blank" aria-label="navega para a página do facebook pessoal">
+                    <div class="logo-social facebook"> <img src="imagens/facebook.svg" alt="logo facebook"></div>
                 </a>
 
-                <a href="https://www.instagram.com/duda_0w0/" target="_blank">
-                    <div class="logo-social instagram"></div>
+                <a href="https://www.instagram.com/duda_0w0/" target="_blank" aria-label="navega para a página do instagram pessoal">
+                    <div class="logo-social instagram"><img src="imagens/instagram.svg" alt="logo instagram"></div>
                 </a>
 
-                <a href="https://github.com/MariaMigliaris" target="_blank">
-                    <div class="logo-social github"></div>
+                <a href="https://github.com/MariaMigliaris" target="_blank" aria-label="navega para a página do github pessoal">
+                    <div class="logo-social github"><img src="imagens/github.svg" alt="logo github"></div>
                 </a>
-
-                
             </div>
 
             <p>Brasil - SP - Monte Alto </p>
 
             <div class="informacoes">
-                <p> <img class="logo-informacao" src="imagens/whatsapp.svg" alt=""> +55 (16) 99302-6647</p>
-                <p> <img class="logo-informacao" src="imagens/email.svg" alt=""> mariaeduardamigliaris2@gmail.com</p>
+                <p> <img class="logo-informacao" src="imagens/whatsapp.svg" alt="icon whatsapp"> +55 (16) 99302-6647</p>
+                <p> <img class="logo-informacao" src="imagens/email.svg" alt="icon email"> mariaeduardamigliaris2@gmail.com</p>
             </div>
 
             
             
         </footer>
-
-
-
-
-
 
 
 
@@ -141,8 +137,6 @@
         </div>
     </div>
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-</body>
-
-
 <script src="script.js"></script>
+</body>
 </html>
