@@ -210,19 +210,12 @@ ul a:hover::before{
 
 .card-linguagem{
     background-color: #1d2031;
-  /*   aspect-ratio: 6/4; */
-   /*  padding: 30px; */
     border-radius: 15px;
     text-align: center;
     display: flex;
     font-size: 1.1rem;
     flex-direction: column;
     width: 70%;
-    /* height: 35%; */
-    /* background-image: url(imagens/html.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
     border: 1px solid #3387A9;
 }
 
