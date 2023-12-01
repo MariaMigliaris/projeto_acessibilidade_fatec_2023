@@ -288,7 +288,7 @@ ul a:hover::before{
     
 }
 
-.secao-projetos h3{
+.secao-projetos h2{
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.3;
@@ -364,7 +364,7 @@ footer{
     top: 40%;
 }
 
-footer h4{
+footer h2{
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.3;
